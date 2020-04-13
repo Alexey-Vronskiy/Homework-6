@@ -1,0 +1,92 @@
+<% include common/header.ejs %>
+<div class="cart">
+    <div class="orders-info">
+        <div class="orders">
+            <div style="padding-right: 10px">Order</div>
+            <div class="quantity"> 0 </div>
+        </div>
+        <button class="clear"> Clear the order </button>
+    </div>
+
+    <div class="container-for-orders">
+        <div class="raw-of-offer">
+            <div class="left-info">
+                <div class="name"> BBQ(велика) </div>
+                <div class="raw-info">
+                    <div class="size" style="padding-right: 10px">
+                        <img style="float:centre" src="assets/images/size-icon.svg">
+                        <div style="margin-left: 5px"> 40 </div>
+                    </div>
+
+                    <div class="weight">
+                        <img style="float:centre" src="assets/images/weight.svg">
+                        <div style="margin-left: 5px"> 370 </div>
+                    </div>
+                </div>
+                <div class="info-buttons">
+                    <div style="font-weight:700">556грн</div>
+                    <div class="main-buttons" style="padding-left: 20px">
+                        <button type="button" class="minus" style="background-image: url(assets/images/iconfinder_minus_1645995.svg)">
+
+                        </button>
+                        <div class="quantity-in"> 1 </div>
+                        <button type="button" class="plus" style="background-image: url(assets/images/iconfinder_plus_1646001.svg)"> </button>
+                        <button type="button" class="remove"> X </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-photo">
+                <img src="assets/images/pizza_1.jpg" class="small-photo">
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="your-order">
+        <div class="order-sum">
+            <div class="total"> In total: </div>
+            <div class="sum"> 0 </div>
+            <div id="currency"> грн </div>
+        </div>
+        <!-- <button type="button" class="warning" id="check"> Check in </button> -->
+        <button type="button" id="edit-order"> Редагувати замовлення </button>
+    </div>
+</div>
+
+<div class="containerr">
+   <div class="order-conatiner"> 
+    <h3>1. Контактні дані </h3>
+    <div id="data-line"> 
+        <div id="field"> Iм'я</div>
+        <input  type="text" class="input-name"  placeholder="Ім'я Прізвище" val="" required pattern="[A-Z][A-Za-z' -]+" >
+    </div>
+    <p class="help-name"> Введіть ваше ім'я з великої літери </p>
+    <div id="data-line"> 
+        <div id="field"> Телефон </div>
+        <input  class="input-tele"  placeholder=" +38011111111" val="" required  type="tel">
+    </div>
+    <p class="help-tele"> У форматі +390994435991 </p>
+    
+    <div id="data-line">
+    <div id="field" > Адреса </div>
+    <input type="text" class="input-address"  placeholder=" Київ, вул Спаська 2, кв. 23 " val="" required>
+    </div>
+
+    <p class="help-address"> Це поле повинно містити вашу адресу </p>
+
+    <div class="information">
+        <h4> Інформація про замовлення </h4>
+        <div id=input-data>
+        <span style="font-weight: 600;"> Приблизний час доставки : </span>
+        <span id=""> невідомий </span>
+        </div>
+    <div id="input-data">
+        <span style="font-weight: 600;"> Адреса доставки : </span>
+        <span id=""> невідома </span>
+    </div>
+    </div>
+
+    <div class="button-place"> <button class="go" type="submit"> Далі > </button> </div>
+      </div>
+</div>
+<% include common/footer.ejs %>

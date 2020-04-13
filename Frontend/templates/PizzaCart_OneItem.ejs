@@ -1,0 +1,37 @@
+<div class="raw-of-offer">
+    <div class="left-info">
+        <div class="name"> <%= pizza.title %> <% if(( size ) == 'big_size') { %> (Large) <% } else { %> (Small) <% } %> </div>
+        <div class="raw-info">
+            <div class="size" style="padding-right: 10px">
+                <img style="float:centre" src="assets/images/size-icon.svg">
+                <div style="margin-left: 5px">
+                    <%= pizza[size].size %>
+                </div>
+            </div>
+
+            <div class="weight">
+                <img style="float:centre" src="assets/images/weight.svg">
+                <div style="margin-left: 5px"> <%= pizza[size].weight %> </div>
+            </div>
+        </div>
+        <div class="info-buttons">
+            <div class="price-order"><%= pizza[size].price %> грн.</div>
+            <div class="main-buttons" style="padding-left: 20px">
+
+                <button type="button" class="minus" style="background-image: url(assets/images/iconfinder_minus_1645995.svg)">
+                </button>
+
+                <div class="quantity-in"> <%= quantity %> </div>
+
+                <button type="button" class="plus" style="background-image: url(assets/images/iconfinder_plus_1646001.svg)">
+                </button>
+
+                <button type="button" class="remove"> X </button>
+            </div>
+        </div>
+    </div>
+    <div class="right-photo">
+        <img src="<%= pizza.icon %>" class="small-photo">
+    </div>
+
+</div>
